@@ -24,7 +24,7 @@ const useFetch = () => {
         get: (url, body = null, headers = {}) => request('GET', url, body, headers),
         post: (url, body = null, headers = {}) => request('POST', url, body, headers),
         patch: (url, body = null, headers = {}) => request('PATCH', url, body, headers),
-        delete: (url, body = null, headers = {}) => request('DELETE', url, body, headers),
+        del: (url, body = null, headers = {}) => request('DELETE', url, body, headers),
     }
 
     return {...HTTPMethod, isLoading, status, error}
